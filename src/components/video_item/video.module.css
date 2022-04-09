@@ -1,0 +1,71 @@
+/*video.css*/
+.wrap {
+  width: 23%;
+  border: 1px solid #000;
+  margin: 25px 0;
+}
+.thumnail {
+  background-color: salmon;
+  width: 100%;
+  
+  
+}
+.thumnailImg {
+  width: 100%;
+  height: 12.2vw;
+  object-fit: cover;
+}
+.cont {
+  background-color: sandybrown;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+}
+.icon {
+  
+}
+.iconImg {
+  background-color: seagreen;
+  display: block;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+}
+.description {
+  margin-left: 10px;
+  padding-right: 10px;
+  /* flex-basis: 80%; */
+}
+.title {
+  margin: 5px 0;
+  font-weight: bold;
+}
+.txt {
+  margin: 5px 0;
+  font-size: 12px;
+}
+@media screen and (max-width: 1200px) {
+  .wrap {
+    width: 30%;
+  }
+  .thumnailImg {
+    height: 15.9vw;
+  }
+  /* .icon {
+    flex-basis: 17%;
+  }
+  .description {
+    flex-basis: 83%;
+  } */
+}
+
+@media screen and (max-width: 800px) {
+  .wrap {
+    width: 95%;
+  }
+  .thumnailImg {
+    height: 50vw;
+  }
+  
+}
+
