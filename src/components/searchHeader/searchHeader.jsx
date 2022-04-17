@@ -22,11 +22,9 @@ const SearchHeader = ({ onSearch }) => {
 
   return (
     <div className={styles.header}>
-      <a href="/">
-        <div className={styles.logo}>
-          <i className="icon__youtube fa-brands fa-youtube"></i>
-          <strong className={styles.logo__tit}>REACT-tube </strong>
-        </div>
+      <a href="/" className={styles.logo}>
+        <i className="icon__youtube fa-brands fa-youtube"></i>
+        <strong className={styles.logo__tit}>REACT-tube </strong>
       </a>
       <div
         className={styles.form} 

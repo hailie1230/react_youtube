@@ -9,6 +9,7 @@
 .logo {
   /* background-color: cadetblue; */
   /* width: 15%; */
+  display: block;
   font-size: 30px;
   font-weight: bold;
   color: #af4448;
@@ -28,6 +29,7 @@
   font-size: 20px;
   width: 90%;
   padding: 5px;
+  border-radius: 0;
 }
 .button {
   font-size: 20px;
@@ -81,16 +83,19 @@
   .box{
     /* display: none; */
     /* position: absolute; */
-    width: 90%;
+    width: 85%;
     left: 0;
     top : 60px;
   }
   .button {
     /* background-color: transparent; */
     /* position: absolute; */
-    width: 10%;
+    width: 15%;
     top: 50%;
     right: 50px;
+  }
+  .button svg {
+
   }
   .user {
     margin-left: 10px;
