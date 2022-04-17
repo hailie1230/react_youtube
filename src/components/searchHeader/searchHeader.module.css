@@ -1,7 +1,7 @@
-/*navbar*/
-.navbar {
-  background-color: antiquewhite;
-  padding: 15px 0;
+/*search header*/
+.header {
+  background-color: #ccb9bc;
+  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,38 +59,45 @@
 }
 
 @media screen and (max-width: 800px) {
+  .header {
+    position: relative;
+    flex-direction: column;
+  }
   .navbar {
     /* background-color: thistle; */
     justify-content:initial;
     position: relative;
   }
   .logo {
-    width: auto;
+    width: 95%;
+    margin-bottom: 10px;
   }
   .form {
-    width: auto;
+    width: 95%;
     display: inline-block;
+    margin-left: 0;
+    
   }
   .box{
-    display: none;
-    position: absolute;
-    width: 100%;
+    /* display: none; */
+    /* position: absolute; */
+    width: 90%;
     left: 0;
     top : 60px;
   }
   .button {
-    background-color: transparent;
-    position: absolute;
+    /* background-color: transparent; */
+    /* position: absolute; */
+    width: 10%;
     top: 50%;
     right: 50px;
-    transform: translateY(-50%);
   }
   .user {
     margin-left: 10px;
     width: auto;
     position: absolute;
-    top: 50%;
+    top: 0px;
     right: 0;
-    transform: translateY(-50%);
+    display: none;
   }
 }

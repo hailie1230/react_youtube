@@ -1,16 +1,20 @@
 import React from 'react';
-import styles from './video.module.css';
+import styles from './video_item.module.css';
 
-const VideoItem = ({video : {snippet}}) => {
+const VideoItem = ({video, video : {snippet}, onVideoClick, display }) => {
   const videoTitle = snippet.title;
-  console.log(videoTitle.length)
   const videoTxt = snippet.channelTitle;
   const videoDate = snippet.publishedAt;
   const imgUrl = snippet.thumbnails.high.url;
-  // console.log(date.substring(0,10))
-  // console.log(snippet.thumbnails.high.url);
+
+  //selected video -> li width 
+  const displayType = display === 'list' ? styles.list : styles.grid;
+  
   return (
-    <li className={styles.wrap}>
+    <li 
+      className={`${styles.wrap} ${displayType}`} 
+      onClick={() => onVideoClick(video)}
+    >
       <div className={styles.thumnail}>
         <img className={styles.thumnailImg} src={imgUrl} alt={snippet.title} />
       </div>

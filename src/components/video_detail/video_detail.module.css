@@ -1,0 +1,35 @@
+.detail {
+  width: 98%;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+.detail iframe {
+  height: 600px !important;
+}
+.textBox {
+  margin-top: 40px;
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.date {
+  font-size: 20px;
+  color: #5b5b5b;
+  margin: 0;
+}
+.description {
+  white-space: pre-wrap;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #5b5b5b;
+}
+@media screen and (max-width: 800px) {
+  .detail {
+    width: 100%;
+    padding-top: 5px;
+  }
+  .detail iframe {
+    height: 220px !important;
+  }
+}
