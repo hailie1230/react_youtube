@@ -28,7 +28,6 @@
 
 2. 검색 기능 구현
 - 클릭했을때(onClick 함수), Enter키를 눌렀을때(onKeyPress 함수) 각각 함수에 handleSearch 함수를 만들어 동일하게 검색기능이 부여되도록 만듦
-- 
 ```
   ({ onSearch }) => {
     const inputRef = useRef();
